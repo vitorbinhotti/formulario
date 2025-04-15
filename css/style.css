@@ -51,3 +51,13 @@ button {
     cursor: pointer;
     width: 100%;
 }
+
+.genero {
+    display: flex;
+    color: white;
+    margin-right: 30px;
+}
+
+form {
+    box-shadow: 0 0 15px 2px white;
+}

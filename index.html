@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <h1 class="titulo">Formulário com validação Javascript</h1>
+    <h1 class="titulo">Formulário com validação Javascript ✅</h1>
     <form id="form">
         <label for="name">Nome Completo:</label>
         <input type="text" id="name" required>
@@ -26,9 +26,15 @@
             <label for="email">E-mail:</label>
             <input type="email" id="email" required>
             <label for="itel">Telefone</label>
-            <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)[0-9]{4,5}-[0-9]{4}&" required
-                placeholder="(xx) xxxxx-xxxx">
+            <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\s?[0-9]{4,5}-[0-9]{4}$" required placeholder="(xx) xxxxx-xxxx">
         </div>
+
+        <label for="genero">Gênero</label>
+            <div class="genero">
+                <input type="radio" name="genero" value="Masculino">Masculino
+                <input type="radio" name="genero" value="Feminino">Feminino 
+                <input type="radio" name="genero" value="Outro">Outro
+            </div>
         <form id="form" name="cadastro" action="" onsubmit="senhaOK();" method="POST" accept-charset="UTF-8">
             <label>Senha:</label>
             <input type="password" name="senha" size="15" required onchange="confereSenha();">
